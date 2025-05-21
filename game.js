@@ -8,6 +8,15 @@ $(document).keypress(function() {
   if (!started) {
     nextSequence();
     started = true;
+    $("#start-btn").hide();
+  }
+});
+
+$("#start-btn").click(function () {
+  if (!started) {
+    nextSequence();
+    started = true;
+    $("#start-btn").hide(); // Hide the button once the game starts
   }
 });
 
@@ -41,6 +50,7 @@ function playSound(name) {
 
 $(".btn").click(handler);
 
+
 function handler() {
     var userChosenColour = this.id;
     userClickedPattern.push(userChosenColour);
@@ -65,6 +75,8 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         }, 200);
         $("#level-title").text("Game Over, Press Any Key to Restart");
+        $('#start-btn').text("Restart");
+        $('#start-btn').show();
         startOver();
     }
 }
