@@ -12,6 +12,7 @@ body {
 
 .start-button {
   padding: 10px 20px;
+  display: inline-block;
   font-size: 3.5rem;
   font-family: 'Press Start 2P', cursive;
   margin-top: 20px;
