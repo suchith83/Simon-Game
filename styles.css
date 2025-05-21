@@ -12,12 +12,15 @@ body {
 
 .start-button {
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 3.5rem;
+  font-family: 'Press Start 2P', cursive;
   margin-top: 20px;
   background-color: #45a049;
   color: white;
+  width: 420px;
+  height: 200px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 
