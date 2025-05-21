@@ -18,7 +18,9 @@ body {
   margin-top: 20px;
   background-color: #45a049;
   color: white;
-  width: 420px;
+  width: 45%; /* Or try 50% */
+  max-width: 450px;
+  min-width: 420px;
   height: 200px;
   border: none;
   border-radius: 20px;
